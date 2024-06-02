@@ -1,5 +1,5 @@
 //定義變量
-var timeCount = 300,
+var timeCount = 180,
 	ipAr,
 	ipAdrs,
 	uName,
