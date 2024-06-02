@@ -1,0 +1,155 @@
+*{padding: 0;margin: 0;font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+*::selection{appearance: none;}
+html,body{height: 100%;background-color: cadetblue;}
+
+/*動畫*/
+@keyframes start{
+	0%{height: 100%;z-index: 999;}
+	50%{height: 0%}
+	100%{height: 10%}
+}
+
+/*上下固定欄*/
+.fixed{
+	position: fixed;
+	width: 100%;
+	font-size: 40px;
+	text-align: center;	
+	background-color: hotpink;
+	height: 10%;
+	transition: .3s;
+	animation: start ease-in-out 3s;
+}
+.fixed:hover{
+	background-color: violet;
+}
+.fixed>span{
+	position: relative;
+	top: 25%;
+	color: blanchedalmond;
+	text-shadow: 8px 8px 8px white;
+	letter-spacing: 2px;
+}
+#bottom{
+	bottom: 0;
+}
+
+/*主要界面*/
+div[noDisplay]{                    /*準備切換下一步的界面，透明度為0*/
+	opacity: 0;
+}
+.content{
+	margin: 50px;
+	position: absolute;
+	top: 10%;
+	background-color: black;
+	width: 90%;
+	height: 70%;
+	transition: ease 2s;
+	color: #fff;
+	align-items: center;
+	justify-content: center;
+}
+.content>input{
+	position: relative;
+	top: 5%;
+	left: 10%;
+	background-color: wheat;
+	font-size: 30px;
+	letter-spacing: 1px;
+	height: 5%;
+	margin-top: 20px;
+	transition: 1s;
+	z-index: 998;
+	border-radius: 1em;
+}
+.content>input:hover{
+	background-color: aquamarine;
+}
+.content>span[use=Warning]{
+	margin: 0 auto;
+	position: relative;
+	top: 8%;
+	text-align: center;
+	color: red;
+	font-size: 3em;
+	display: block;
+}
+
+/*table1樣式*/
+#table1>#ipCheck1{
+	width: 80%;
+}
+#table1>#ipCheck2{
+	width: 50%;
+}
+#table1>#ipCheck3{
+	width: 30%;
+	color: blue;
+	display: inline;
+}
+#table1>#ipCheck4{
+	position: relative;
+	left: 40%;
+	margin-top: 60px;
+	width: 20%;
+	display: block;
+}
+
+/*table2樣式*/
+#table2>input{
+	width: 80%;
+	display: block;
+}
+#table2>#userBuild5{
+	font-size: 2em;
+}
+#table2>#userBuild6{
+	display: block;
+	position: relative;
+	left: 40%;
+	margin-top: 60px;
+	width: 20%;
+}
+
+/*table3樣式*/
+#table3>input{
+	display: block;
+	width: 80%;
+}
+#table3>h1{
+	appearance: none;
+	margin-top: 1em;
+	font-size: 3em;
+}
+#table3>#accountCheck5{
+	width: 15%;
+	margin-left: 30%;
+}
+
+/*table4樣式*/
+#table4{
+	text-align: center;
+	color: #fff;
+	line-height: 7rem;
+	overflow: auto;
+}
+#table4>#timeRest{
+	font-size: 5em;
+	margin-top: 6rem;
+}
+
+/*圖片*/
+.images{
+	position: absolute;
+	bottom: calc(20% - 50px);
+	left: 50px;
+	width: calc(100% - 100px);
+	height: 35%;
+	z-index: 998;
+	transition: 2s;
+	border: 1px gold solid;
+}
+.images:hover{
+	border: 2px #fff solid;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--網站注釋-->
+		<meta charset="UTF-8"/>
+		<meta name="keywords" content="18緊,棋牌,麻將,后肏少婦,閒童,跑車,同興,獵奇,拖拉機,水管組裝"/>
+		<meta name="description" content="請記住我們的最新網址：ttx.shuaibi.net"/>
+		<meta name="author" content="ttx"/>
+		<meta name="copyright" content="本站的所有資源請勿盜取"/>
+		<title>🔞</title>
+		<meta http-equiv="refresh" content="300;url=target.html"/>
+		<link rel="stylesheet" href="css/index.css"/>
+		<script src="js/index.js"></script>
+	</head>
+	<body>
+		<!--兩個上下的固定框-->
+		<div class="fixed">
+			<span>請您在5分鐘内填寫好下方的表格<br/>5分鐘后將會自動跳轉</span>
+		</div>
+		<div class="fixed" id="bottom">
+			<span>未滿18嵗請離開！<br/>刷新頁面後需重新填寫，後果自負！</span>
+		</div>
+		<!--圖片-->
+		<div class="images" onclick="changeImg()">
+			<img src="img/1.png" alt="我們將引領成人影片的未來" id="img"/>
+		</div>
+		<!--網站主體-->
+		<div class="content" id="table1"><!--第一個表格-->
+			<input id="ipCheck1" use="ipAddress" type="text" placeholder="請輸入您的IP屬地(例如:日本東京)"/>
+			<input id="ipCheck2" use="ipCheck" type="text" placeholder="請輸入您的IP地址(請謹慎填寫,確認後無法修改)"/>
+			<input id="ipCheck3" use="ipCheckAuto" type="button" value="不知道？現在檢測!" onclick="ipCheck()"/>
+			<input id="ipCheck4" use="ipNext" type="button" value="下一步" onclick="table1Next()"/>
+			<span id="ipCheck5" use="Warning">18緊,棋牌,麻將,后肏,少婦,閒童,跑車,同興,獵奇,拖拉機,水管組裝,點擊下方圖片以獲取更多</span>
+		</div>
+		<div class="content" id="table2" noDisplay><!--第二個，以此類推-->
+			<input id="userBuild1" use="userName" type="text" placeholder="請創建用戶名,我們會爲您推送更刺激,您更喜歡的内容"/>
+			<input id="userBuild2" use="userAge" type="number" placeholder="請輸入您的年齡,我們需要瞭解我們的網站更吸引誰"/>
+			<input id="userBuild3" use="userPassword" type="password" placeholder="請新建您的密碼以便我們篩查您,把條子排除在外" />
+			<input id="userBuild4" use="userContact" type="text" placeholder="您是否有QQ或郵箱？請填寫(選填)"/>
+			<span id="userBuild5" use="Warning">18緊,棋牌,麻將,后肏,少婦,閒童,跑車,同興,獵奇,拖拉機,水管組裝,點擊下方圖片以獲取更多</span>
+			<input id="userBuild6" use="userNext" type="button" value="下一步" onclick="table2Next()"/>
+		</div>
+		<div class="content" id="table3" noDisplay>
+			<h1>請確認，如有誤請修改,分別爲您的姓名、年齡、密碼、聯係方式</h1>
+			<input type="text" id="accountCheck1" use="actChkName"/>
+			<input type="number" id="accountCheck2" use="actChkAge"/>
+			<input type="password" id="accountCheck3" use="actChkPassword"/>
+			<input type="text" id="accountCheck4" use="actChkContact"/>
+			<input id="accountCheck5" use="accountNext" type="button" value="完成" onclick="table3Next()"/>
+		</div>
+		<div class="content" id="table4" noDisplay>
+			<span id="timeRest" use="timeRest"></span>
+		</div>
+	</body>
+</html>

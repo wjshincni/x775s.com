@@ -1,0 +1,42 @@
+*{padding: 0;margin: 0;}
+html,body{height: 100%;background-color: lightblue;}
+
+footer{
+	position: fixed;
+	left: 25%;
+	bottom: 0;
+	color: greenyellow;
+	font-size: 2rem;
+}
+
+#container{
+	width: 80%;
+	height: 80%;
+	margin-left: 10%;
+	margin-top: 20%;
+	background-color: skyblue;
+	text-align: center;
+}
+#container>img{
+	margin: 5rem;
+}
+#container>#img1{
+	position: absolute;
+	left: 30%;
+}
+#container>#img2{
+	position: absolute;
+	right: 30%;
+}
+#container>#img3{
+	display: inline;
+	position: relative;
+	top: 10%;
+}
+#timeCount{
+	position: relative;
+	top: 10%;
+	color: pink;
+	font-weight: 900;
+	font-size: 7rem;
+}
