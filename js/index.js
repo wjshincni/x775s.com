@@ -15,11 +15,6 @@ window.onload = (function(){
 	},10000)
 })
 
-window.onbeforeunload = (function(event){
-	var e = event || window.event;
-	e.returnValue = "還剩" + timeCount + "秒跳轉網頁，您確定要離開嗎？";
-})
-
 //圖片
 function changeImg(){
 	var img = document.getElementById("img"),
